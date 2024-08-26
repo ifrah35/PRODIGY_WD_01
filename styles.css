@@ -1,0 +1,191 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+h1, h2 {
+    color: #fff; /* White heading text */
+}
+
+p, a {
+    color: #bbb; /* Light grey text for paragraphs and links */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+/* Navigation Menu */
+#nav-menu {
+    background-color: #222; /* Darker background */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 50px;
+}
+
+/* Home Section */
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background for better text readability */
+}
+
+.home-image {
+    width: 100%; /* Full width of the parent container */
+    height: 100vh; /* Full height of the viewport for the home section */
+    position: relative; /* Ensures the image is positioned relative to this container */
+    overflow: hidden; /* Hide any overflow */
+}
+
+.home-image img {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Cover the container without stretching */
+    object-position: center; /* Center the image */
+    display: block; /* Avoids inline spacing issues */
+    border-radius: 0; /* No rounded corners */
+    margin: 0; /* No margins */
+}
+
+
+
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.about-text {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Services Section */
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.service-card {
+    width: 30%;
+    padding: 20px;
+    background-color: #333; /* Darker card background */
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    margin-bottom: 20px;
+}
+
+.service-card i {
+    font-size: 50px;
+    color: #fff; /* White icons */
+    margin-bottom: 15px;
+}
+
+.service-card h2 {
+    color: #fff; /* White card headings */
+}
+
+.service-card p {
+    color: #bbb; /* Light grey text for card descriptions */
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Scroll Effect */
+.scrolled {
+    background-color: #000; /* Black background when scrolled */
+}
